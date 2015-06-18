@@ -1,0 +1,14 @@
+<h3 style="color: black;">Gallery</h3>
+<div ng-controller="GalleryCtrl as galleryCtrl" class="gallery-div">
+  <h3>Search By:</h3>
+  <input style="color: black; height: 30px;" type="search" ng-model="galleryCtrl.search" placeholder="Name, Project, or Year">
+    <div class="">
+      <div class="row">
+        <ul>
+          <li class="gallery_images col-sm-6" ng-repeat="item in images | orderBy: 'project' | filter:galleryCtrl.search">
+            <img ng-src="images/{{item.image}}"  alt="{{item.description}}" class="img-responsive">
+          </li>
+        </ul>
+      </div>
+    </div>
+</div>

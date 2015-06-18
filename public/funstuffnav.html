@@ -1,0 +1,99 @@
+<div class="fun_stuff_nav">
+  <div ng-controller="FunStuff as funstuff" class=" navbar navbar-inverse">
+    <div class="container-fluid">
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div>
+        <h3 ng-click="funstuff.setTab(0)">{{funstuff.title}}</h3>
+        <ul class="nav navbar-nav">
+          <li ng-click="funstuff.setTab(1)"><a href="">Posters</a></li>
+          <li ng-click="funstuff.setTab(2)"><a href="">Gallery</a></li>
+          <li ng-click="funstuff.setTab(3)"><a href="">Games</a></li>
+          <li ng-click="funstuff.setTab(4)"><a href="">Positions</a></li>
+        </ul>
+      </div>
+    </div><!-- /.container-fluid -->
+    <div ng-show="(funstuff.tab==0)"></div>
+
+    <div ng-show="(funstuff.tab==1)">
+      <div class="row">
+        <div class="col-xs-3 ">
+          <img src="images//AW_1cbs.png" width="100">
+        </div>
+        <div class="col-xs-3">
+          <img src="images/AW_2bs.png" width="100">
+        </div>
+        <div class="col-xs-3">
+          <img src="images/AW_3bs.png" width="100">
+        </div>
+        <div class="col-xs-3">
+          <img src="images/AW_5bs.png" width="100">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <img src="images/AW_6s.png" width="100">
+        </div>
+        <div class="col-xs-3">
+          <img src="images/AW_7bs.png" width="100">
+        </div>
+        <div class="col-xs-3">
+          <img src="images/AW_8bbs.png" width="100">
+        </div>
+        <div class="col-xs-3">
+          <img src="images/AW_9bs.png" width="100">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <img src="images/Frostbite.jpg" width="100">
+        </div>
+        <div class="col-xs-3">
+          <img src="images/Totally Awesome 80s Poster.jpg" width="100">
+        </div>
+        <div class="col-xs-3">
+          <img src="images/kingofthemountain2.jpg" width="100">
+        </div>
+        <div class="col-xs-3">
+          <img src="images/Tracks poster 2.jpg" width="100">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <img src="images/poster.jpg" width="100">
+        </div>
+        <div class="col-xs-3">
+          <img src="images/jimmy.jpg" width="100">
+        </div>
+        <!--<div class="col-xs-3">
+          <img src="images/" width="100">
+        </div>
+        <div class="col-xs-3">
+          <img src="images/" width="100">
+        </div>-->
+      </div>
+    </div>
+
+    <div ng-show="(funstuff.tab==2)">
+      <input style="color: black; margin-left: 50px;" type="text" ng-model="funstuff.search" placeholder="Search by Name or Year">
+        <div class="row">
+          <div class="col-xs-12 col-centered">
+            <ul>
+              <li class="gallery_images" ng-repeat="item in funstuff.images | orderBy: 'date' | filter:funstuff.search">
+                <img ng-src="images/{{item.image}}" alt="{{item.description}}" class="img-responsive">
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+
+    <div ng-show="(funstuff.tab==3)">Actors Test</div>
+    <div ng-show="(funstuff.tab==4)">Crew Test</div>
+  </div>
+
+
+
+  <div class="">
+    <h4 style="color: black;">Video selector menu</h4>
+  </div>
+</div>

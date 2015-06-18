@@ -1,0 +1,10 @@
+<h3>Submit Your Film</h3>
+
+<div ng-controller="submitFilmCtrl as submitCtrl">
+  <ul>
+    <li ng-repeat="video in submitCtrl.list()">
+      <span ng-bind='video.iframe'></span>
+    </li>
+  </ul>
+  <input type="submit" ng-model="videoIframe" placeholder="Iframe">
+</div>

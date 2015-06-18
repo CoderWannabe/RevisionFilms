@@ -1,0 +1,231 @@
+/*members page*/
+
+.staff_div {
+}
+
+.backplate {
+    width: 360px;
+    height: 420px;
+    left: 0px;
+    top: 20px;
+    margin-bottom: 20px;
+}
+
+.webkit-reflect {
+	-webkit-box-reflect: below 6px -webkit-gradient(linear, left top, left bottom,  from(transparent), color-stop(51%, transparent), to(rgba(255, 255, 255, 0.5)));
+
+	position: absolute;
+}
+
+.webkit-reflect2 {
+	-webkit-box-reflect: below -3px -webkit-gradient(linear, left top, left bottom,  from(transparent), color-stop(65%, transparent), to(rgba(255, 255, 255, 0.5)));
+
+	position: absolute;
+}
+
+.webkit-reflect3 {
+	-webkit-box-reflect: below 6px -webkit-gradient(linear, left top, left bottom,  from(transparent), color-stop(65%, transparent), to(rgba(255, 255, 255, 0.5)));
+
+	position: absolute;
+}
+
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+
+
+/*profile header*/
+
+.profile_header {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: rgba(0,0,0,0.50);
+    border-radius: 4px 4px 4px 4px;
+    height: 75px;
+    width: 318px;
+}
+
+.profile_header h1 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.profile_header h2 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.profile_header h3 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.profile_header h4 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.profile_header h5 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+/*profile front div*/
+
+.profile_div {
+    position: absolute;
+    background-color: rgba(0,0,0,0.25);
+    border: 1px solid white;
+    height: 400px;
+    width: 320px;
+    left: 0px;
+    border-radius: 4px 4px 4px 4px;
+    overflow: hidden;
+
+}
+
+.profile_pic {
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 10px;
+
+}
+.profile_back_pic {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 50px;
+
+}
+
+.empty_profile {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+
+}
+
+.profile_text {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
+
+/*profile back info*/
+
+.profile_contact {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    height: 400px;
+    width: 320px;
+    left: 0px;
+    border: 1px solid white;
+    border-radius: 4px 4px 4px 4px;
+    overflow: hidden;
+}
+
+.profile_contact_text {
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.profile_context_text p {
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+.profile_contact_text h3 {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.profile_contact_email {
+    position: absolute;
+    width:300px;
+    background-color: rgba(0,0,0,0.50);
+    margin-top: 253px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile_contact_email2 {
+    position: absolute;
+    width:300px;
+    background-color: rgba(0,0,0,0.50);
+    margin-top: 173px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.facebook {
+    position: absolute;
+    left: 260px;
+    top: 5px;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 50%, rgba(255,255,255,1));
+}
+
+.facebook::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: -moz-element(.facebook_img) no-repeat;
+    position: absolute;
+    top: 45px;
+    -moz-transform: scaleY(-1);
+    z-index: -1;
+}
+
+.twitter {
+    position: absolute;
+    left: 220px;
+    top: 5px;
+}
+
+.pinterest {
+    position: absolute;
+    left: 220px;
+    top: 9px;
+}
+
+.profile_logo {
+    position: absolute;
+    left: 260px;
+    top: 12px;
+}
+
+.profile_links {
+    position: absolute;
+    list-style-type: none;
+    margin-left: -40px;
+    top: 150px;
+}
+
+.profile_links li {
+    display: inline;
+    padding: 5px;
+}
+
+a.glow, a.glow:hover, a.glow:focus {
+	text-decoration: none;
+	color: #fff;
+	text-shadow: none;
+	-webkit-transition: 500ms linear 0s;
+	-moz-transition: 500ms linear 0s;
+	-o-transition: 500ms linear 0s;
+	transition: 500ms linear 0s;
+	outline: 0 none;
+}
+
+a.glow:hover, a.glow:focus {
+	color: #fff;
+	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
+
+/*Footer*/
+
+.footer_index p {
+    margin-top: 20px;
+}
